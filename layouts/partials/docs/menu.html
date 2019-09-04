@@ -10,6 +10,15 @@
 {{ end }}
 
 {{ partial "docs/inject/menu-after" . }}
+<div class="footer">
+  <br>
+	&copy; {{ now.Format "2006" }} {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
+	{{ if .Site.Params.footer.show_powered_by -}}
+	<br><br>
+	Powered by <a href="http://gohugo.io/">Hugo</a>
+	&amp; <a href="https://github.com/alex-shpak/hugo-book" target="_blank">Book Theme</a>
+	{{ end }}
+</div>
 </nav>
 
 <!-- Restore menu position as soon as possible to avoid flickering -->

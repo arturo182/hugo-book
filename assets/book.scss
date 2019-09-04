@@ -20,7 +20,7 @@ body {
   color: $body-font-color;
   background: $body-background;
 
-  font-family: sans-serif;
+  font-family: 'Garamond', 'Georgia', serif;
   font-weight: $body-font-weight;
 
   text-rendering: optimizeLegibility;
@@ -43,10 +43,11 @@ h5 {
 
 a {
   text-decoration: none;
+  border-bottom: 1px dotted #999;
   color: $color-link;
 
-  &:visited {
-    color: $color-visited-link;
+  &:hover {
+    border-bottom: 1px solid #999;
   }
 }
 
@@ -61,14 +62,6 @@ aside nav ul {
 
   li {
     margin: 1em 0;
-  }
-
-  a {
-    display: block;
-  }
-
-  a:hover {
-    opacity: 0.5;
   }
 
   ul {
@@ -93,11 +86,21 @@ ul.pagination {
 
 .book-brand {
   margin-top: 0;
+  text-align: center;
+  
+  a {
+    text-decoration: none;
+    border: 0;
+  }
+  
+  img {
+    width: 10rem;
+  }
 }
 
 .book-menu {
   flex: 0 0 $menu-width;
-  font-size: $font-size-14;
+  font-size: 15px;
 
   nav {
     width: $menu-width;
@@ -274,6 +277,17 @@ aside nav,
     .markdown {
       opacity: 0.25;
     }
+  }
+}
+
+div.footer {
+  font-size: 12px;
+  color: #888;
+  
+  a {
+    color: #888;
+    border: 0;
+    text-decoration: underline;
   }
 }
 

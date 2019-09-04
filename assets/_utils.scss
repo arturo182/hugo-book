@@ -65,7 +65,7 @@
 
 @mixin dark-links {
   a {
-    color: $color-dark-link;
+    font-size: 110%;
   }
 
   a.active {

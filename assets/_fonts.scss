@@ -1,6 +1,5 @@
 /* roboto-300italic - latin */
 @font-face {
-  font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
   src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
@@ -9,7 +8,6 @@
 }
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
@@ -18,7 +16,6 @@
 }
 /* roboto-700 - latin */
 @font-face {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'),
@@ -37,7 +34,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
 }
 
 code {
