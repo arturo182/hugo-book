@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
 </head>
-{{ $content := `
-# Hugo Book Theme
-
-This is a placeholder for home page.  
-You can override this page in:
-
- - &#96;/content/_index.md&#96;
- - &#96;/layouts/home.html&#96;
-` }}
 <body>
-  <main class="flex justify-center">
-    <div class="book-home markdown">
-      {{ replace $content "&#96;" "`" | markdownify }}
+  <div class="flex justify-center">
+    <div class="book-home" style="width: 80%; text-align: center">
+      <img src="serpente.svg" width="10%">
+      <h1>Welcome to the Serpente Documentation</h1>
+      <h2>Select your revision:</h2>
+      <table width="100%">
+        <tr>
+          <td style="text-align: center;">
+            <a href="/r1" style="border: 0;"><img src="/r1/both_boards_small.jpg" width="80%"><h1>R1</h1></a>
+          </td>
+          <td style="text-align: center;">
+            <a href="/r2" style="border: 0;"><img src="/r2/three_boards_small.jpg" width="80%"><h1>R2</h1></a>
+          </td>
+        </tr>
+      </table>
     </div>
-  </main>
+  </div>
 
   {{ partial "docs/inject/body" . }}
   {{ template "_internal/google_analytics_async.html" . }}

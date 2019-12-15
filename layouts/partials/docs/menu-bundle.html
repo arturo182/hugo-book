@@ -1,5 +1,6 @@
 {{ template "hrefhack" . }}
-{{ with .Site.GetPage .Site.Params.BookMenuBundle }}
+{{ $x := (printf "/%s%s" .Page.Params.Rev .Site.Params.BookMenuBundle) }}
+{{ with .Site.GetPage $x }}
   {{- .Content -}}
 {{ end }}
 

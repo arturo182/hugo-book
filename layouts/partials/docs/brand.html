@@ -1,6 +1,6 @@
 <h2 class="book-brand">
   <a href="{{ .Site.BaseURL }}">
     <img src="{{ "serpente.svg" | relURL }}">
-    {{ .Site.Title }}
+    Serpente {{ if in $.URL "r1" }}R1{{ else }}R2{{ end }} Docs
   </a>
 </h2>
